@@ -13,6 +13,7 @@ cd /tmp && wget https://download.documentfoundation.org/libreoffice/stable/7.3.7
 cd /tmp && tar zxvf LibreOffice_7.3.7_Linux_x86-64_deb_langpack_zh-CN.tar.gz
 cd /tmp/LibreOffice_7.3.7.2_Linux_x86-64_deb_langpack_zh-CN/DEBS && dpkg -i *.deb 
 cd /usr/local/bin && ln -s /opt/libreoffice7.3/program/soffice /usr/local/bin/soffice
+apt-get install -y libreoffice-l10n-zh-cn
 echo "-----> libreoffice installed!"
 sleep 1 # wait so that docker run has not exited before docker attach
 EOF
