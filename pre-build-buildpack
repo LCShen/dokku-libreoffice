@@ -9,6 +9,9 @@ apt-get install -y default-jre libxinerama1 libdbus-1-dev libcups2-dev libx11-xc
 cd /tmp && wget https://download.documentfoundation.org/libreoffice/stable/7.3.7/deb/x86_64/LibreOffice_7.3.7_Linux_x86-64_deb.tar.gz
 cd /tmp && tar zxvf LibreOffice_7.3.7_Linux_x86-64_deb.tar.gz
 cd /tmp/LibreOffice_7.3.7.2_Linux_x86-64_deb/DEBS && dpkg -i *.deb
+cd /tmp && wget https://download.documentfoundation.org/libreoffice/stable/7.3.7/deb/x86_64/LibreOffice_7.3.7_Linux_x86-64_deb_langpack_zh-CN.tar.gz
+cd /tmp && tar zxvf LibreOffice_7.3.7_Linux_x86-64_deb_langpack_zh-CN.tar.gz
+cd /tmp/LibreOffice_7.3.7.2_Linux_x86-64_deb_langpack_zh-CN/DEBS && dpkg -i *.deb 
 cd /usr/local/bin && ln -s /opt/libreoffice7.3/program/soffice /usr/local/bin/soffice
 echo "-----> libreoffice installed!"
 sleep 1 # wait so that docker run has not exited before docker attach
