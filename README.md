@@ -1,20 +1,20 @@
-# dokku-wkhtmltopdf
+# dokku-libreoffice
 
-dokku-wkhtmltopdf is an awesome plugin for [dokku][dokku] that properly installs the wkhtmltopdf into the docker instance.
-This plugin should fix the problems you may have when downloading wkhtmltopdf with ```apt-get``` for example by using another awesome plugin [dokku-apt][dokku-apt].
+dokku-libreoffice is an awesome plugin for [dokku][dokku] that properly installs the libreoffice into the docker instance.
+This plugin should fix the problems you may have when downloading libreoffice with ```apt-get``` for example by using another awesome plugin [dokku-apt][dokku-apt].
 
 ## Installation
 
 On your dokku server:
 ```sh
 # On 0.3.x
-git clone https://github.com/mbriskar/dokku-wkhtmltopdf /var/lib/dokku/plugins/dokku-wkhtmltopdf
+git clone https://github.com/LCShen/dokku-libreoffice /var/lib/dokku/plugins/dokku-libreoffice
 
 # On 0.4.x
-dokku plugin:install https://github.com/mbriskar/dokku-wkhtmltopdf.git wkhtmltopdf
+dokku plugin:install https://github.com/LCShen/dokku-libreoffice.git libreoffice
 ```
 
-All future deployments will have dokku-wkhtmltopdf installed.
+All future deployments will have dokku-libreoffice installed.
 
 ## License
 
@@ -25,7 +25,7 @@ Copyright (c) 2015 Matej Briškár
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merge, publish, distribute, sublicense, and/or selllibreoffice
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
