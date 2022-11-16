@@ -5,7 +5,7 @@ APP="$1"; IMAGE="dokku/$APP"
 echo "-----> Installing libreoffice ..."
 COMMAND=$(cat <<EOF
 apt-get -y  update 
-apt-get install -y default-jre libxinerama1 libdbus-1-dev libcups2-dev libx11-xcb-dev
+apt-get install -y default-jre libxinerama1 libdbus-1-dev libcups2-dev libx11-xcb-dev ttf-wqy-microhei
 cd /tmp && wget https://download.documentfoundation.org/libreoffice/stable/7.3.7/deb/x86_64/LibreOffice_7.3.7_Linux_x86-64_deb.tar.gz
 cd /tmp && tar zxvf LibreOffice_7.3.7_Linux_x86-64_deb.tar.gz
 cd /tmp/LibreOffice_7.3.7.2_Linux_x86-64_deb/DEBS && dpkg -i *.deb
